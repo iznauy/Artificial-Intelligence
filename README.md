@@ -8,5 +8,9 @@
 - [x] A*算法解决八数码问题
 - [x] 模拟退火解决8皇后问题
 - [x] 随机重启爬山法解决8皇后问题
-- [ ] Assignment1：Bait游戏
+- [ ] Assignment1：Bait游戏（推箱子）
+      - [x] 深度优先搜索
+      - [ ] 深度受限的搜索算法
+      - [ ] Astar启发式搜索
+- [x] Assignment2：黑白棋（使用min-max算法外加alpha-beta剪枝实现黑白棋AI）
 
