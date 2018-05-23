@@ -196,7 +196,7 @@ public class MTDDecider implements Decider {
 			}
 			
 			System.out.printf("%2.2f",0.001*(System.currentTimeMillis() - startTimeMillis));
-			System.out.println(": " + d + ": "+actions.get(0));
+//			System.out.println(": " + d + ": "+actions.get(0));
 			
 			if (times_up()) {
 				break;
@@ -216,7 +216,7 @@ public class MTDDecider implements Decider {
 		System.out.printf("NPS:%.2f EBF:%.2f eff:%.2f\n", nodesPerSec, EBF, searchEfficiency);
 		System.out.println("Cache hits:"+cacheHits);
 			
-		System.out.println("Available actions:"+actions);
+//		System.out.println("Available actions:"+actions);
 		return getRandomBestAction(actions);
 	}
 

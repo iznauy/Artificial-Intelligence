@@ -291,8 +291,8 @@ public class Othello extends JFrame {
 		boolean computerIsMaximizer = (whichPlayer == 1);
 		boolean computerMovesFirst = computerIsMaximizer;
 		
-		gamePanel = new GamePanel(new MiniMaxDecider(computerIsMaximizer, maxDepth), start, computerMovesFirst);
-		//gamePanel = new GamePanel(new MTDDecider(computerIsMaximizer, nummilli, 64), start, computerMovesFirst);
+		//gamePanel = new GamePanel(new MiniMaxDecider(computerIsMaximizer, maxDepth), start, computerMovesFirst);
+		gamePanel = new GamePanel(new MTDDecider(computerIsMaximizer, nummilli, 64), start, computerMovesFirst);
 		
 		gamePanel.setMinimumSize(new Dimension( Width,
 				 Height));
@@ -325,7 +325,7 @@ public class Othello extends JFrame {
 		javax.swing.SwingUtilities.invokeLater(new Runnable() {
 			public void run() {
 				// 0 - Human plays first, 1000ms - time for computer decision (for MTDDecider)
-				Othello frame = new Othello(0, 1000, 1);
+				Othello frame = new Othello(1, 5000, 8);
 			}
 		});
 

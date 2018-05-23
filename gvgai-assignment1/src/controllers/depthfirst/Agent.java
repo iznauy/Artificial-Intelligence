@@ -27,12 +27,12 @@ public class Agent extends AbstractPlayer {
 
     @Override
     public Types.ACTIONS act(StateObservation stateObs, ElapsedCpuTimer elapsedTimer) {
-//        System.out.println(actions.size());
-//        try {
-//            Thread.sleep(500);
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
+        try {
+            Thread.sleep(80);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        System.out.println(actions.size());
         return actions.removeFirst();
     }
 
